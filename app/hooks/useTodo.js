@@ -11,10 +11,11 @@ export const useTodo = () => {
     }
   };
 
-  const [todos, dispatch] = useReducer(todoReducer, initialState, init);
+  const [todos = "", dispatch] = useReducer(todoReducer, initialState, init);
 
+  let todos2 = Object.values(todos);
   const todosCount = todos.length;
-  const pendingTodosCount = todos.filter((todo) => !todo.done).length;
+  const pendingTodosCount = todos2.filter((todo) => !todo.done).length;
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
@@ -56,6 +57,7 @@ export const useTodo = () => {
   };
 
   return {
+    todos2,
     todos,
     todosCount,
     pendingTodosCount,
