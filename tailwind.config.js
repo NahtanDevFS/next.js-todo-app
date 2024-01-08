@@ -13,7 +13,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       boxShadow: {
-        fullshape: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;",
+        fullshape: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
       },
     },
   },
