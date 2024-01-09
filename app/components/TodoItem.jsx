@@ -15,8 +15,8 @@ export const TodoItem = ({
         className="flex items-center overflow-hidden mt-0"
       >
         <label
-          className={`bg-slate-900 w-6 h-6 rounded-3xl cursor-pointer absolute border-2 border-solid border-green-500 mr-3 transition-all duration-200 ease-in-out ${
-            todo.done ? "bg-green-500" : ""
+          className={`w-6 h-6 rounded-3xl cursor-pointer absolute border-2 border-solid border-green-600 mr-3 transition-all duration-200 ease-in-out ${
+            todo.done ? "bg-green-600" : "bg-slate-900"
           } `}
         ></label>
       </span>
