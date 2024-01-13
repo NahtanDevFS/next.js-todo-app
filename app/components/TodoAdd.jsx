@@ -30,14 +30,16 @@ export const TodoAdd = ({ handleNewTodo }) => {
         value={description}
         onChange={onInputChange}
         placeholder="start a new task..."
-        className="focus:shadow-lg focus:shadow-blue-700 pl-2 py-4 placeholder:text-slate-600 font-semibold sm:w-[80%] min-[308px]:w-[70%] w-[100%] bg-slate-800 rounded-2xl outline-none transition-all duration-300 ease-in-out"
+        className="focus:shadow-lg focus:shadow-blue-700 pl-2 py-4 placeholder:text-slate-600 font-semibold w-[100%] bg-slate-800 rounded-2xl outline-none transition-all duration-300 ease-in-out"
       />
-      <button
-        type="submit"
-        className="sm:ml-8 min-[375px]:ml-[9%] min-[308px]:mt-0 mt-2 text-slate-300 font-semibold text-xl  ml-2 bg-slate-700 p-3 rounded-2xl hover:bg-slate-500 transition-all duration-300 ease-in-out"
-      >
-        Add
-      </button>
+      <div className="flex items-center justify-center">
+        <button
+          type="submit"
+          className="mt-4 text-slate-300 font-semibold text-xl bg-blue-800 p-3 px-[10%] rounded-2xl hover:bg-blue-500 transition-all duration-300 ease-in-out"
+        >
+          Add
+        </button>
+      </div>
     </form>
   );
 };
