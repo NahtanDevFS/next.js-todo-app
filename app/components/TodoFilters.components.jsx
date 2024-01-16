@@ -6,7 +6,7 @@ export const FiltersContainer = ({ children }) => {
   );
 };
 
-export const FilterButton = ({ action, active = "", filter = "" }) => {
+export const FilterButton = ({ action, active, filter }) => {
   return (
     <button
       onClick={action}

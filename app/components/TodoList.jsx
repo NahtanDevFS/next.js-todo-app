@@ -12,7 +12,6 @@ export const TodoList = ({
   showActiveTodos,
   showCompletedTodos,
 }) => {
-  let todos3 = Object.values(todos);
   return (
     <ul className="mt-4">
       <TodoFilters
@@ -21,15 +20,16 @@ export const TodoList = ({
         showActiveTodos={showActiveTodos}
         showCompletedTodos={showCompletedTodos}
       />
-      {todos3.map((todo) => (
-        <TodoItem
-          key={todo.id}
-          todo={todo}
-          handleUpdateTodo={handleUpdateTodo}
-          handleDeleteTodo={handleDeleteTodo}
-          handleCompleteTodo={handleCompleteTodo}
-        />
-      ))}
+      {todos &&
+        todos.map((todo) => (
+          <TodoItem
+            key={todo.id}
+            todo={todo}
+            handleUpdateTodo={handleUpdateTodo}
+            handleDeleteTodo={handleDeleteTodo}
+            handleCompleteTodo={handleCompleteTodo}
+          />
+        ))}
     </ul>
   );
 };

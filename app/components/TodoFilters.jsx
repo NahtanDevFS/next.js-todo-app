@@ -7,7 +7,6 @@ export const TodoFilters = ({
   showActiveTodos,
   showCompletedTodos,
 }) => {
-  console.log(activeFilter);
   return (
     <div>
       <FiltersContainer>
